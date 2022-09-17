@@ -21,3 +21,11 @@ docker run --rm ghcr.io/blockpane/tenderduty:latest -example-config >config.yml
 wget -O $HOME/tenderduty/config.yml "https://raw.githubusercontent.com/romanv1812/TenderDuty/main/config.yml"
 nano $HOME/tenderduty/config.yml
 ```
+## Настройка мониторинга:
+
+echo -e "\033[0;32mprometheus_listen_port$(grep -A 8 "\[instrumentation\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
+echo valoper_address:$($TIKER keys show $WALLET --bech val -a)
+имя сети:
+chain-id:
+valoper_address:
+url:
