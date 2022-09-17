@@ -4,7 +4,6 @@
 ##
 
 ### Подготовка сервера
-
 ```bash 
 sudo apt update && sudo apt upgrade -y && \
 sudo apt install curl build-essential git wget jq make gcc tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
@@ -41,12 +40,12 @@ echo -e "\033[0;32mhttp://$(wget -qO- eth0.me)$(grep -A 3 "\[rpc\]" ~/$NODE_FOLD
 ```bash
 nano $HOME/tenderduty/config.yml # Или открыть через SFTP config.yml
 ```
-
 ### После настройки конфига запускаем
-
+```bash
 docker run -d --name tenderduty -p "8888:8888" -p "28686:28686" --restart unless-stopped -v $(pwd)/config.yml:/var/lib/tenderduty/config.yml ghcr.io/blockpane/tenderduty:latest
-
-### смотрим логи
+```
+### Смотрим логи
+```bash
 docker logs -f --tail 20 tenderduty
-
+```
 
