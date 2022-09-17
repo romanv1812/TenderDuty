@@ -37,3 +37,16 @@ echo -e "\033[0;32mprometheus_listen_port$(grep -A 8 "\[instrumentation\]" ~/$NO
 echo valoper_address:$($TIKER keys show $WALLET --bech val -a)
 echo -e "\033[0;32mhttp://$(wget -qO- eth0.me)$(grep -A 3 "\[rpc\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
 ```
+### На Сервере с TenderDuty нужно внести свои данные в шаблон:
+```bash
+nano $HOME/tenderduty/config.yml # Или открыть через SFTP config.yml
+```
+
+### После настройки конфига запускаем
+
+docker run -d --name tenderduty -p "8888:8888" -p "28686:28686" --restart unless-stopped -v $(pwd)/config.yml:/var/lib/tenderduty/config.yml ghcr.io/blockpane/tenderduty:latest
+
+### смотрим логи
+docker logs -f --tail 20 tenderduty
+
+
