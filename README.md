@@ -18,6 +18,6 @@ docker run --rm ghcr.io/blockpane/tenderduty:latest -example-config >config.yml
 ```
 ### Скачать шаблон конфига
 ```bash
-wget -O $HOME/tenderduty/config.yml "https://raw.githubusercontent.com/romanv1812/guides/main/config.yml"
+wget -O $HOME/tenderduty/config.yml "https://raw.githubusercontent.com/romanv1812/TenderDuty/main/config.yml"
 nano $HOME/tenderduty/config.yml
 ```
