@@ -62,14 +62,36 @@ echo -e "\033[0;32mhttp://$(wget -qO- eth0.me):8888/\033[0m"
 ### Создание канала    
 > Нажать на кнопку:   
 > <img width="50" alt="image" src="https://user-images.githubusercontent.com/83868103/190870811-5a6f4ebe-e20e-47d4-8803-40811adfedde.png">  
+> 
 > Выбрать:   
-> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190870865-4ea927f7-3a79-4fda-b199-2730f1191f19.png">     
+> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190870865-4ea927f7-3a79-4fda-b199-2730f1191f19.png">  
+>    
 > Выбрать:  
-> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871041-638598e7-42da-40f4-9839-8a18970c32b7.png">   
+> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871041-638598e7-42da-40f4-9839-8a18970c32b7.png">  
+>  
 > Ввести название сервера:   
 > <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871205-5c6e474c-9619-4dd1-8227-99724e52051d.png">  
+> 
 > Завершить создание канала нажатием кнопки:     
 > <img width="90" alt="image" src="https://user-images.githubusercontent.com/83868103/190871249-baf6bf83-c2ed-466c-958b-42313777ab3d.png"> 
+> 
+### Интеграция ноды с Discord
+> Открыть "Настройки сервера" в созданном канале:   
+> <img width="200" alt="image" src="https://user-images.githubusercontent.com/83868103/190871404-aef215df-c5e2-42f5-9733-47a415125b31.png">
+>   
+> Перейти во вкладку "Интеграция":    
+> <img width="200" alt="image" src="https://user-images.githubusercontent.com/83868103/190871443-e37e511e-7f43-4b82-a03a-cc67a79cecdc.png">  
+> 
+> Создать новый "Вебхук":  
+> <img width="500" alt="image" src="https://user-images.githubusercontent.com/83868103/190871554-de41e047-2c15-4f00-aaf8-b4c2550a6f55.png">  
+> 
+> Ввести данные и "Копировать URL вебхука":   
+> <img width="500" alt="image" src="https://user-images.githubusercontent.com/83868103/190871582-5f5f1fce-2146-420f-b6f9-63bb80dd489f.png">  
+
+
+
+
+
 
 
 
