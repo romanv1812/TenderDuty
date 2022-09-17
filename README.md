@@ -33,6 +33,7 @@ WALLET=wallet
 ### Получение данных для редактирования config.yml
 ```bash
 echo -e "\033[0;32mprometheus_listen_port$(grep -A 8 "\[instrumentation\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
+echo chain-id:" "$($TIKER status 2>&1 | jq ."NodeInfo" | jq ."network")
 echo valoper_address:$($TIKER keys show $WALLET --bech val -a)
 echo -e "\033[0;32mhttp://$(wget -qO- eth0.me)$(grep -A 3 "\[rpc\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
 ```
