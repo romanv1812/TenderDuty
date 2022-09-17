@@ -70,23 +70,39 @@ echo -e "\033[0;32mhttp://$(wget -qO- eth0.me):8888/\033[0m"
 > <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871041-638598e7-42da-40f4-9839-8a18970c32b7.png">  
 >  
 > Ввести название сервера:   
-> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871205-5c6e474c-9619-4dd1-8227-99724e52051d.png">  
+> <img width="250" alt="image" src="https://user-images.githubusercontent.com/83868103/190871685-45053949-0cbf-437b-994c-a9887fbbe0c4.png">  
 > 
 > Завершить создание канала нажатием кнопки:     
 > <img width="90" alt="image" src="https://user-images.githubusercontent.com/83868103/190871249-baf6bf83-c2ed-466c-958b-42313777ab3d.png"> 
 > 
-### Интеграция ноды с Discord
+### Создание "Вебхука"
 > Открыть "Настройки сервера" в созданном канале:   
-> <img width="200" alt="image" src="https://user-images.githubusercontent.com/83868103/190871404-aef215df-c5e2-42f5-9733-47a415125b31.png">
+> <img width="150" alt="image" src="https://user-images.githubusercontent.com/83868103/190871404-aef215df-c5e2-42f5-9733-47a415125b31.png">
 >   
 > Перейти во вкладку "Интеграция":    
-> <img width="200" alt="image" src="https://user-images.githubusercontent.com/83868103/190871443-e37e511e-7f43-4b82-a03a-cc67a79cecdc.png">  
+> <img width="150" alt="image" src="https://user-images.githubusercontent.com/83868103/190871443-e37e511e-7f43-4b82-a03a-cc67a79cecdc.png">  
 > 
 > Создать новый "Вебхук":  
-> <img width="500" alt="image" src="https://user-images.githubusercontent.com/83868103/190871554-de41e047-2c15-4f00-aaf8-b4c2550a6f55.png">  
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/83868103/190871554-de41e047-2c15-4f00-aaf8-b4c2550a6f55.png">  
 > 
 > Ввести данные и "Копировать URL вебхука":   
-> <img width="500" alt="image" src="https://user-images.githubusercontent.com/83868103/190871582-5f5f1fce-2146-420f-b6f9-63bb80dd489f.png">  
+> <img width="400" alt="image" src="https://user-images.githubusercontent.com/83868103/190871582-5f5f1fce-2146-420f-b6f9-63bb80dd489f.png">
+### Обновление конфигурации TenderDuty
+
+#### Необходимо ввести полученный URL 
+
+```code
+# Настройки Discord
+discord:
+  # Оповещения в discord?
+  enabled: yes
+  # Webhook настраивается щелчком правой кнопки мыши на канале, редактированием настроек и настройкой webhook в разделе интеграции.
+  webhook: https://discord.com/api/webhooks/1020066792514789457/RfExj09cOl0-XdR2wTct9Rk0s9LT75Bp92spG7L6Wd-JOVawyId76Xbp3e_ysvghGk8q
+```
+```bash
+nano $HOME/tenderduty/config.yml # Или открыть через SFTP config.yml
+```
+
 
 
 
