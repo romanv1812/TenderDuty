@@ -48,6 +48,10 @@ docker run -d --name tenderduty -p "8888:8888" -p "28686:28686" --restart unless
 ```bash
 docker logs -f --tail 20 tenderduty
 ```
+<img width="873" alt="image" src="https://user-images.githubusercontent.com/83868103/190863293-654a89e0-c092-4b97-850b-599777289ad9.png">
+
+
+
 ### Получить ссылку панели мониторинга
 ```bash
 echo -e "\033[0;32mhttp://$(wget -qO- eth0.me):8888/\033[0m"
