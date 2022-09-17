@@ -24,10 +24,16 @@ wget -O $HOME/tenderduty/config.yml "https://raw.githubusercontent.com/romanv181
 nano $HOME/tenderduty/config.yml
 ```
 ## Настройка мониторинга:
-
+#### Команды выполняются на сервере с нодой
+### Ввод переменных:
+```bash
+NODE_FOLDER=.haqq
+TIKER=haqqd
+WALLET=wallet
+```
+### Получение данных для редактирования config.yml
+```bash
 echo -e "\033[0;32mprometheus_listen_port$(grep -A 8 "\[instrumentation\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
 echo valoper_address:$($TIKER keys show $WALLET --bech val -a)
-имя сети:
-chain-id:
-valoper_address:
-url:
+echo -e "\033[0;32mhttp://$(wget -qO- eth0.me)$(grep -A 3 "\[rpc\]" ~/$NODE_FOLDER/config/config.toml | egrep -o ":[0-9]+")\033[0m"
+```
